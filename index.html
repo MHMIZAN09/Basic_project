@@ -14,20 +14,35 @@
             border: 1px solid lightgray;
             padding: 0 10px;
         }
+        .thead{
+            background-color: pink;
+        }
+        .name{
+            background-color: palegreen;
+            text-align: center;
+            font-size: 25px;
+        }
+        .sound{
+            background-color: brown;
+            padding: 10px;
+            border: 5px solid pink;
+            margin: 25px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <table>
-        <thead>
+        <thead class="thead">
             <tr>
-                <th>Name: </th>
-                <th>Company Name: </th>
-                <th>Salary: </th>
+                <th >Name: </th>
+                <th >Company Name: </th>
+                <th >Salary: </th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Md.Mizanur Rahman</td>
+                <td class="name">Md.Mizanur Rahman</td>
                 <td>gub company</td>
                 <td>$450</td>
             </tr>
@@ -48,6 +63,9 @@
             </tr>
         </tbody>
     </table>
+    <div class="sound">
+        <audio controls src="media/Goat.mp3"></audio>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
